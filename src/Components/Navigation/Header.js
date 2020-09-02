@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom"
 // import auth from "../../services/authService";
 import "./header.css";
-// import logo from "../home/assets/fcc_logo.png";
+
 import DrawerToggleButton from "./DrawerToggleButton";
 import { Container } from "react-bootstrap";
 
@@ -28,7 +28,7 @@ class Header extends Component {
                     <div>
                         <ul className="nav">
                             <li>
-                                <NavLink to="/ministries" activeClassName="active-link" className="ot-link">
+                                <NavLink to="/add-new-user" activeClassName="active-link" className="ot-link">
                                    Ministries
                                 </NavLink>
                             </li>
@@ -61,8 +61,8 @@ class Header extends Component {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/building-project"activeClassName="active-link" className="ot-link">
-                                    Faith Audithorium
+                                <NavLink to="/logout"activeClassName="active-link" className="ot-link">
+                                    Sign Out
                                 </NavLink>
                             </li>
                         </ul>

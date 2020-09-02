@@ -13,20 +13,22 @@ import Logout from "./Components/logOut/logout";
 import auth from "./services/authService";
 import Profile from "./Components/Profile/profile";
 import Useraddedmarketers from "./Components/UserAddedMarketers/user_add_marketers";
+import Register from "./Components/Signup/Sign_up";
 
 
 class Routes extends Component {
     state = {
         user: {}
     };
-
     componentDidMount() {
         const user = auth.getCurrentUser();
         this.setState({ user });
     }
 
+
     render() {
         const { user } = this.state;
+console.log(user)
         return (
             <div className="body">
             <Router>
@@ -35,14 +37,14 @@ class Routes extends Component {
                     <Switch>
                         {/* <Route path="/forgot-password" component={Forgotpassword} />
                         <Route path="/reset-password/:token" component={Resetpassword} />
-                        <Route path="/signup" component={SignUp} /> */}
-                        {/* <Route path="/login" component={Login} /> */}
+                       <Route path="/login" component={Login} /> */}
                         <Navigation user={user}>
                             <Route
                                 path="/"
                                 exact
                                 render={props => <App {...props} user={user} />}
                             />
+                            <Route path="/add-new-user" component={Register} /> }
                             <Route path='/add-marketer' component={Listmarketer}/>
                             <Route path="/profile" component={Profile} />
                             <Route path="/marketer/:id" component={Useraddedmarketers} />
@@ -53,8 +55,7 @@ class Routes extends Component {
                 </div>
             </Router>
             </div>
-        );
-    }
-}
+        )};
+     }
 
 export default Routes;

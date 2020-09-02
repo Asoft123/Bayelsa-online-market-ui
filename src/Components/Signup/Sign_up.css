@@ -1,0 +1,41 @@
+.home-image {
+	display: none;
+	width: 100%;
+	height: 400px;
+	margin-top: 15%;
+}
+.sign-up-box {
+	height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .signup-card {
+	margin-top: 20%;
+}
+.cloned {
+	display: flex;
+}
+
+.cloned {
+	margin: 10px;
+}
+.agree {
+	font-size: x-small;
+	margin-left: 15px;
+}
+.agre {
+	font-size: x-small;
+	margin-left: 2px;
+} */
+@media only screen and (min-width: 768px) {
+	
+
+	
+
+	.card-view-signup {
+		margin-top: 30px;
+		margin-bottom:100px ;
+	}
+}

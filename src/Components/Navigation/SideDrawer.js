@@ -31,7 +31,7 @@ class SideDrawer extends Component {
                     </div> */}
 
                     <div className="side-nav">
-                        <NavLink to="/ministries" onClick={hide} activeClassName="active-link" className="sd-link mt-5">
+                        <NavLink to="/add-new-user" onClick={hide} activeClassName="active-link" className="sd-link mt-5">
                           <GiLovers activeClassName="active-link" className="icon-fix mb-n3"  color="white"  /> Ministries
                         </NavLink>
                     </div>

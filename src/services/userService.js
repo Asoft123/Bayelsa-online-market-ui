@@ -15,7 +15,6 @@ return http.post(apiEndpoint, {
       phone:user.phone,
       isAdmin:user.isAdmin,
       password:user.password,
-      updatedAt:user.updatedAt
 })
 }
 
