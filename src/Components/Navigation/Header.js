@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 // import auth from "../../services/authService";
 import "./header.css";
 // import logo from "../home/assets/fcc_logo.png";
@@ -11,23 +11,9 @@ class Header extends Component {
         scrolled:false,
     }
 
-      componentDidMount() {
-            window.addEventListener(`scroll`, () => {
-                const isTop = window.scrollY < 120;
-                if(isTop !== true){
-                    this.setState({scrolled:true})
-                }else{
-                    this.setState({scrolled:false})
-
-                }
-            })
-        }
-        componentWillUnmount() {
-            window.removeEventListener('scroll')
-        }
+     
     render() {
 
-      const { hideo } = this.props;
         // auth.expiredLogout()
         // const { user } = this.props;
         return (
@@ -36,17 +22,9 @@ class Header extends Component {
                     <div>
                         <DrawerToggleButton click={this.props.drawerClickHandler} />
                     </div>
-                    {/* <div>
-                        <Link to="/" className="logo logo_display1">
-                            <img className="logo" src={logo} alt="Logo" />
-                        </Link>
-                    </div> */}
+                   
                     <div className="spacer" />
-                    {/* {!hideo && <div className="small-screen">
-                        <Link to="/" className="logo logo_display2">
-                            <img className="logo" src={logo} alt="Logo" />
-                        </Link>
-                    </div>} */}
+                   
                     <div>
                         <ul className="nav">
                             <li>

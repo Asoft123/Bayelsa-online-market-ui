@@ -7,7 +7,7 @@ import { GiLovers} from 'react-icons/gi';
 // import logo from "../home/assets/fcc_logo.png";
 // import auth from '../../services/authService';
 import "./SideDrawer.css";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 class SideDrawer extends Component {
 
